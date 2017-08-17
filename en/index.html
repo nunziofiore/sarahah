@@ -92,8 +92,8 @@
             <input type="text" class="form-control" placeholder="Sarahah Username" id="username" aria-label="Username" aria-describedby="sizing-addon1">
           </div>
             <br/>
-          <button class="btn btn-primary btn-lg btn-block" onclick="if ($('#username').val()!=''){$('form').submit()}else{alert('set a username');return false;}">CHECK IF YOUR MESSAGES <br/>ARE REALLY ANONYMOUS</button>
-          <button class="btn btn-success btn-lg btn-block" onclick="if ($('#username').val()!=''){$('form').submit()}else{alert('set a username');return false;}">DISCOVER FACEBOOK ACCOUNT <br/> OF YOUR SENDER</button>
+          <button class="btn btn-primary btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">CHECK IF YOUR MESSAGES <br/>ARE REALLY ANONYMOUS</button>
+          <button class="btn btn-success btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">DISCOVER FACEBOOK ACCOUNT <br/> OF YOUR SENDER</button>
 
         </form>
       </div>
