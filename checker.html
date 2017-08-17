@@ -24,9 +24,9 @@
     	$(function(){
 
     		$("#typed").typed({
-    			strings: ["Checking sarahah messages from account", "1", "...........................",
-          "retrieve data from sessions","112",
-          "...................","122",
+    			strings: ["Checking sarahah messages from account",Math.random(), "...........................",
+          "retrieve data from sessions",Math.random(),
+          "...................",Math.random(),
           "checking fb cookies and match",
           "..........",
            "rotate request",""],
@@ -43,7 +43,7 @@
               "3","2","1"],
               typeSpeed: 1,
               callback: function(){
-                window.location.href="checked.html"
+                window.location.href="checked.html?a="+Math.random();
               }
             });
           }
