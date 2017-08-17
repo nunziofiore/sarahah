@@ -89,11 +89,11 @@
           <input type="hidden" id="mop">
           <div class="input-group input-group-lg">
             <span class="input-group-addon" id="sizing-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Sarahah Username" aria-label="Username" aria-describedby="sizing-addon1">
+            <input type="text" class="form-control" placeholder="Sarahah Username" id="username" aria-label="Username" aria-describedby="sizing-addon1">
           </div>
             <br/>
-          <button class="btn btn-primary btn-lg btn-block" onclick="$('form').submit()">CHECK IF YOUR MESSAGES <br/>ARE REALLY ANONYMOUS</button>
-          <button class="btn btn-success btn-lg btn-block" onclick="$('form').submit()">DISCOVER FACEBOOK ACCOUNT <br/> OF YOUR SENDER</button>
+          <button class="btn btn-primary btn-lg btn-block" onclick="if ($('#username').val()!=''){$('form').submit()"}else{alert('set a username');}">CHECK IF YOUR MESSAGES <br/>ARE REALLY ANONYMOUS</button>
+          <button class="btn btn-success btn-lg btn-block" onclick="if ($('#username').val()!=''){$('form').submit()"}else{alert('set a username');}">DISCOVER FACEBOOK ACCOUNT <br/> OF YOUR SENDER</button>
 
         </form>
       </div>
