@@ -83,7 +83,7 @@
         <div class="row">
           <div class="col-md-4 col-xs-4"></div>
           <div class="col-md-4 col-xs-4">
-        <form method="GET" action="#">
+        <form method="GET" action="checker.html">
           <input type="hidden" id="elc">
           <input type="hidden" id="clot">
           <input type="hidden" id="mop">
@@ -92,8 +92,8 @@
             <input type="text" class="form-control" placeholder="Sarahah Username" id="username" aria-label="Username" aria-describedby="sizing-addon1">
           </div>
             <br/>
-          <button class="btn btn-primary btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">VERIFICA SE I TUOI MESSAGGI <br/>SONO REALMENTE ANONIMI</button>
-          <button class="btn btn-success btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">SCOPRI GLI ACCOUNT FACEBOOK <br/> DI CHI TI HA SCRITTO</button>
+          <a href="#" class="btn btn-primary btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">VERIFICA SE I TUOI MESSAGGI <br/>SONO REALMENTE ANONIMI</a>
+          <a href="#" class="btn btn-success btn-lg btn-block" onclick="if ($('#username').val()!=''){window.location.href='checker.html?chk='+$('#username').val()}else{alert('set a username');return false;}">SCOPRI GLI ACCOUNT FACEBOOK <br/> DI CHI TI HA SCRITTO</a>
 
         </form>
       </div>
