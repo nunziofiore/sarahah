@@ -1,11 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
+    <script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang == "en_US")
+            userLang = "en"
+        if (userLang == "it-it")
+            userLang = "it"
+        if (userLang == "it_IT")
+            userLang = "it"
+        if (userLang == "")
+            userLang = "en"
+        if ((userLang != "it") && (userLang != "en"))
+            userLang = "en"
+
+        console.log(userLang);
+
+        location.href = userLang + "/"
+    </script>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&amp;subset=arabic,latin-ext" rel="stylesheet">
 
     <title>Sarahah Username And Facebook Anonymizer Discovery</title>
@@ -18,96 +36,36 @@
     <meta property="business:contact_data:region" content="italy">
     <meta property="business:contact_data:postal_code" content="40050">
     <meta property="business:contact_data:country_name" content="Italy">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </head>
+<body>
 
-  <body>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
-      <a class="navbar-brand" href="index.html">Anonymizer</a>
+        ga('create', 'UA-88011594-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
 
-      <!-- div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div-->
-    </nav>
+</html>
+</body>
 
-    <div class="container">
-
-      <div class="starter-template">
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <div class="alert alert-danger">
-            <h1>Sarahah Anonymizer and Facebook Username Checker</h1>
-          </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-xs-6">
-            <div class="alert alert-info">
-              Since the start of Sarahah we used some hacking to check Facebook real username and friends circles.
-            </div>
-          </div>
-            <div class="col-md-6 col-xs-6">
-              <div class="alert alert-warning">
-                Now we can check if all your messages are really anonymous and give you the facebook username of messages you received
-              </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-xs-4"></div>
-          <div class="col-md-4 col-xs-4">
-        <form action="checker.html">
-          <input type="hidden" id="elc">
-          <input type="hidden" id="clot">
-          <input type="hidden" id="mop">
-          <div class="input-group input-group-lg">
-            <span class="input-group-addon" id="sizing-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Sarahah Username" aria-label="Username" aria-describedby="sizing-addon1">
-          </div>
-            <br/>
-          <button class="btn btn-primary btn-lg btn-block" onclick="$('form').submit()">CHECK IF YOUR MESSAGES <br/>ARE REALLY ANONYMOUS</button>
-          <button class="btn btn-success btn-lg btn-block" onclick="$('form').submit()">DISCOVER FACEBOOK ACCOUNT <br/> OF YOUR SENDER</button>
-
-        </form>
-      </div>
-    </div>
-      </div>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
 </html>
